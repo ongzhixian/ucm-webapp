@@ -33,7 +33,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Deploy Static Site to S3 Bucket
-        run: aws s3 sync ./web s3://ucm-webapp-prd --delete
+        run: aws s3 sync ./web s3://ucm-webapp-prd --delete --cache-control max-age=60
 
       # # Runs a single command using the runners shell
       # - name: Run a one-line script

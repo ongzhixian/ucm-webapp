@@ -2,9 +2,10 @@
 
 // Shared object/namespace
 const SiteConfiguration = {
-    name: "Test"
+    name: "UCM"
 };
 window.site = SiteConfiguration;
+document.title = window.site.name;
 
 ////////////////////////////////////////
 // FOR HANDLING LOGIN AND CREDENTIALS
