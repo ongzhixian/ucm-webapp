@@ -32,8 +32,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
-      # - name: Deploy Static Site to S3 Bucket
-      #   run: aws s3 sync ./web s3://day86 --delete
+      - name: Deploy Static Site to S3 Bucket
+        run: aws s3 sync ./web s3://ucm-webapp-prd --delete
 
       # # Runs a single command using the runners shell
       # - name: Run a one-line script
